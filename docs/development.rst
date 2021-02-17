@@ -23,6 +23,17 @@ Generate minified JS and CSS files via ``Gulp``:
 Run the test suite with ``tox``. More information about testing is
 available at :doc:`Testing page <testing>`.
 
+Local testing
+-------------
+
+This extension works when is hosted on Read the Docs,
+to make it work locally a custom ``READTHEDOCS_DATA`` js variable is provided to send the search requests to
+https://readthedocs-sphinx-search.readthedocs.io/_/api/v2/search/.
+Due to our CORS settings your browser will block the requests,
+so you'll need to install a plugin like `CORS everywhere`_ to make it work.
+
+.. _CORS everywhere: https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/
+
 Releasing
 ---------
 

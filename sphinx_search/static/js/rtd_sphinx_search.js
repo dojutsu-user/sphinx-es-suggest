@@ -697,7 +697,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const project = READTHEDOCS_DATA.project;
         const version = READTHEDOCS_DATA.version;
         const language = READTHEDOCS_DATA.language || "en";
-        const api_host = '/_';
+        const api_host = READTHEDOCS_DATA.proxied_api_host || '/_';
 
         let initialHtml = generateAndReturnInitialHtml();
         document.body.appendChild(initialHtml);
