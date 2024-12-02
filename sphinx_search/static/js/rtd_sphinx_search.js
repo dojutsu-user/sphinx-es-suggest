@@ -846,6 +846,7 @@ window.addEventListener("DOMContentLoaded", () => {
         // Escape button
         document.addEventListener("keydown", e => {
             if (e.keyCode === 27) {
+                e.preventDefault();
                 removeSearchModal();
             }
         });
